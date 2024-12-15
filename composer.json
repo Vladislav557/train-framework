@@ -2,17 +2,36 @@
     "name": "train/framework",
     "type": "library",
     "license": "MIT",
+    "support": {
+        "issues": "https://github.com/Vladislav557/train-framework/issues",
+        "source": "https://github.com/Vladislav557/train-framework",
+        "wiki": "https://github.com/Vladislav557/train-framework/wiki"
+    },
     "autoload": {
         "psr-4": {
-            "Train\\Framework\\": "src/"
+            "Framework\\": "src/Framework/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Framework\\Tests\\": "tests/"
         }
     },
     "authors": [
         {
             "name": "Vladislav Kiselev",
-            "email": "trololo557@gmail.com"
+            "email": "trololo557@gmail.com",
+            "role": "Developer"
         }
     ],
     "minimum-stability": "alpha",
-    "require": {}
+    "require": {
+        "php": "8.2.*",
+        "ext-mbstring": "*",
+        "ext-iconv": "*",
+        "ext-pdo": "*",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "ext-simplexml": "*"
+    }
 }
